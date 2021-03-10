@@ -1,0 +1,259 @@
+#head_img {
+  background-image: url(../img/main.png);
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.head_container {
+    display: flex;
+    justify-content: space-between;
+    padding:1.3rem;
+  }
+
+.head_wrap h1 {
+  text-align: center;
+  line-height: 33vh;
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+
+.icon img {
+  height: 2.5rem;
+}
+
+.nav img {
+  padding-top:1.2rem;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+main h1 {
+  text-align: center;
+  font-size: 1.5rem;
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+}
+
+body {
+  font-family: 'ヒラギノ明朝 ProN','Hiragino Mincho ProN','Yu Mincho Light','YuMincho','Yu Mincho','游明朝体',sans-serif;
+}
+
+li {
+  padding: 1rem;
+}
+
+section li a {
+  display: block;
+  text-decoration: none;
+  border-bottom: black 1px solid;
+  color: black;
+  box-sizing: border-box;
+  font-size: 1.1rem;
+  padding-bottom: 30px;
+}
+
+a:hover {
+  opacity: .5;
+  transition: .3s;
+}
+
+.day {
+  display: block;
+  padding-bottom: 30px;
+  font-size: 1rem;
+}
+
+.border {
+  display: inline-block;
+  border:solid 1px black;
+  padding:7px;
+  box-sizing: border-box;
+  font-size: .7rem;
+  vertical-align: middle;
+  margin-left: 25px;
+}
+
+/* 施工事例 */
+
+.build_ex {
+  padding: 1rem;
+}
+
+.build_ex img {
+  width: 100%;
+}
+
+.build_ex p {
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.sekou {
+  text-align: center;
+  margin: 3rem 0 7rem 0;
+}
+
+.sekou a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.3rem;
+  border: black solid 1px;
+  padding: 1rem 3rem;
+}
+
+.links a img {
+  width: 100%;
+}
+
+/* footer */
+
+footer {
+  background: #000;
+}
+
+footer img {
+  height: 40px;
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 1rem;
+}
+
+.footer_nav li a {
+  display: block;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+footer ul {
+  padding-bottom: 2rem;
+}
+ 
+small {
+  color: #fff;
+  display: block;
+  text-align: center;
+  padding: .5rem 0;
+  font-size: .7rem;
+}
+
+/* PC用 */
+@media screen and (min-width:961px) {
+  .nav img {
+    display: none;
+  }
+
+  .header_nav ul {
+    display: flex;
+  }
+
+  .header_nav {
+    margin-top: 1rem;
+  }
+
+  .pc_nav li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.1rem;
+    padding: 1rem;
+  }
+
+  .head_wrap h1 {
+    font-size: 3rem;
+    line-height: 67vh;
+  }
+
+  .head_container {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  #head_img {
+    height: 80vh;
+  }
+
+  .icon img {
+    height: 60px;
+  }
+
+  main h1 {
+    font-size: 2.5rem;
+    margin-top: 3rem;
+  }
+
+  .center {
+    display: block;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .center ul li a {
+    display: flex;
+    padding-bottom: 0;
+  }
+
+  .text {
+    padding-left: 2rem;
+    line-height: 1.4;
+  }
+
+  .build_container {
+    display: flex;
+  }
+
+  .build_ex {
+    padding: 1rem 4rem 0 3rem;
+  }
+
+  .build_ex h1 {
+    font-size: 1.3rem;
+    margin-top: 0;
+  }
+
+  .build_ex a img {
+    width: 50%;
+  }
+
+  .build_ex a {
+    display: block;
+    text-align: center;
+  }
+
+  .links {
+    display: flex;
+  }
+
+  .sekou {
+    margin-top: 6rem;
+  }
+
+  .footer_nav {
+    display: flex;
+    order: 2;
+  }
+
+  footer img {
+    margin: 0;
+    order: 1;
+  }
+
+  .footer_container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: 0 auto ;
+    padding-top: 2rem;
+  }
+
+}
+
+/* 携帯用 */
+@media screen and (max-width:960px) {
+  .header_nav {
+    display: none;
+  }
+}
